@@ -1,0 +1,809 @@
+/* base styles */
+body {
+
+	font-size: 80%;
+	line-height: 1.6;
+	font-family: Georgia, Serif;
+	color: #333;
+	background-color: #fff;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+
+	margin: 0;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+	
+	margin-bottom: .5em;
+}
+
+h1 {
+	font-size: 3.000em;
+}
+
+h2 {
+	font-size: 2.250em;
+}
+
+h3 {
+	font-size: 1.750em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+h6 {
+	font-size: 1.125em;
+}
+
+
+/* paragraphg*/
+p {
+
+	margin-bottom: 1em;
+	/*color: white;
+	font-family:tahoma;
+	font-size: 100%;*/
+}
+
+
+
+/*responsive images*/
+
+img {
+	max-width: 100%;
+}
+
+
+/*list items o out*/
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+blockquote {
+	margin-left: 0.8em;
+}
+
+
+/*links */
+a {
+	text-decoration: none;
+}
+
+/* layout styles */
+.container {
+	margin: 0 auto;
+	width: 96%;
+	padding: 3.2em 0;
+	max-width: 85.375em;
+
+}
+
+/* grids styles */
+@media only screen and (min-width: 48em) {
+
+	.column,
+	.column-0 {
+		float: left;
+		margin-bottom: 1.5em; /* the gap betweenn grids*/
+	}
+
+	.column {
+
+		margin-right: 2%; /* this is for column gutters - the gaps in between */
+	}
+
+	.column:last-child {
+
+		margin-right: 0;
+	}
+
+	/* we put the sizes base on our column gotters calculation*/
+
+	/*colum with gutters*/
+	.column-2 	{ width: 49%; }
+	.column-3 	{ width: 32%; }
+	.column-4	{ width: 23.5%; }
+	.column-5 	{ width: 18.4%; }
+
+	/*colum without gutters*/
+	.column-0-2 { width: 50%; }
+	.column-0-3	{ width: 33.3333%; }
+	.column-0-4 { width: 25%; }
+	.column-0-5 { width: 20%; }
+	.column-0-2of5 { width: 40%; }
+	.column-0-3of5 { width: 60%; }
+
+}
+
+
+
+@media only screen and (min-width: 48em) {
+
+	.container {
+	
+		width: 85%;
+	}
+}
+
+@media only screen and (min-width: 64em) {
+
+	.container {
+	
+		width: 90%;
+
+	}
+}
+
+
+/* header styles*/
+.contact{
+
+float:left;
+width: 25%;
+margin-left:2em;
+clear: both;
+
+
+}
+.header__container{
+overflow: hidden;
+margin-top: 1em;
+position: elative;
+
+}
+.other__item{
+float: right;
+width: 20%;
+margin-right: 2em;
+margin-top: 0em;
+
+}
+.items{
+display:block;
+
+}
+.items ul{
+padding:0;
+margin :0;
+}
+.items li{
+
+display: inline-block;
+list-style-type:none;
+padding:0em 0.5em;
+}
+.items li a{
+
+}
+<
+/* navigation style */
+/* logo */
+
+
+
+.header{
+	
+	
+	height:65px;
+	margin-left: 3em;
+	line-height:100px;
+	text-align:center;
+	width: 85%;
+	clear: both;
+
+/** end of header*/
+/*navigation style*/
+/* logo */
+}
+.site-logo {
+	background-image: url(../images/Logo-impera-Header.png);
+	background-repeat: no-repeat;
+	width: 270px;
+	height: 96px;
+
+	margin-top: -3em;
+	margin-left: 8em;
+	display:inline-block;
+	text-indent: -9999em;
+	
+}
+
+.site-logo--desktop {
+
+}
+
+
+/* naviagtions styles */
+.main-nav__list {
+	
+	list-style-type: none;
+	border-top: 1px solid #ccc;
+	
+}
+
+.main-nav__list-item {
+	border-bottom: 1px solid #ccc;
+}
+
+.main-nav__list-item > a {
+
+	color: #222;
+	padding: .5em;
+	display: block;
+}
+
+@media only screen and (min-width: 64.000em) {
+
+	.site-logo {
+
+		 float: left;
+		 width: 38%;
+	}
+
+	.main-nav__list {
+		float: right;
+		width: 60%;
+	}
+	
+	.main-nav__list-item {
+
+		float: left;
+	}
+
+	.main-nav__list,
+	.main-nav__list-item {
+
+		border: none;
+	}
+	
+	.site-logo--mobile {
+		display: none;
+	}
+	.site-logo--desktop {
+		display: block;
+	}
+
+
+	.main-nav {
+
+		background-color: #fff;
+		padding: .8em 0;
+		
+
+		
+		margin-bottom: 3em;
+		top: 0;
+		width: 100%;
+		z-index: 20;
+
+	}
+
+	.main-nav .container {
+
+		padding: 3em;
+	}
+
+	.main-nav__list {
+
+		line-height: 0.1em;
+		height: 100px;
+	}
+
+	.main-nav__list-item > a {
+
+		padding: 0 1em;
+	}
+
+}
+
+.main-nav__list{
+	margin-bottom: em;
+}
+
+/* hero styles */
+.hero {
+	background-color: #500165;
+	position: relative;
+	padding:4em 3em;
+	margin-bottom: 10em;
+
+}
+.hero__paragrap{
+
+	margin-top: 2em;
+	
+	color:white;
+	font-size: 160%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.hero__title {
+
+	color: #fff;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.transparent:after {
+
+	content: " ";
+
+	/*background-color: rgba(80, 1, 101, .5);*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+
+}
+
+.hero-info {
+	
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	width:70%;
+	margin-left: 13em;
+}
+.button__style{
+
+padding:1em 2em;
+margin-top: 0em;
+
+}
+
+.button__style li{
+list-style-type: none;
+display: inline-block;
+
+}
+.button__style ul{
+padding:1em 1em;
+
+}
+
+@media only screen and (min-width: 48.000em) {
+
+	.hero {
+		background-image: url(../images/bg-sample.jpg);
+		background-repeat: no-repeat;
+		background-size: 150%;
+
+		height: 12.750em;
+		
+	}
+
+	.hero__title  {
+		font-size: 2em;
+		margin-right: 3em;
+	}
+}
+
+
+
+@media only screen and (min-width: 64.000em) { 
+
+	.hero {
+
+		height: 28.125em;
+		margin-top: 98.6px;
+	}
+
+	.hero__title  {
+		font-size: 2.5em;
+	}
+
+}
+
+
+
+/*buttons*/
+.button {
+
+	color: #fff;
+	border: 2px solid #fff;
+	padding: .5em 1.5em;
+	display: inline-block;
+	margin-top: 3em;
+	/*margin:0.5em 1em;*/
+}
+
+/*end of hero stle*/
+
+/*our brands style*/
+
+
+/* Brands styles */
+
+.brands__listing {
+
+}
+
+.brand {
+	
+	margin-bottom: 1.6em;
+	text-align: center;
+	padding-top: 1.6em;
+	margin-right: 2em;
+
+}
+
+.brand__image {
+	
+	height: 150px;
+	width: 150px;
+}
+
+
+
+
+
+@media only screen and (min-width: 40em) {
+
+	.brands__listing-item {
+		float: left;
+		width: 49%;
+		margin-right: 2%;
+	}
+
+	.brands__listing-item:nth-child(even),
+	.brands__listing-item:last-child {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: 64em) {
+	.brands__listing-item {
+		width: 32%;
+	}
+
+	.brands__listing-item:nth-child(even) {
+		margin-right: 2%;
+		
+	}
+
+	.brands__listing-item:nth-child(3),
+	.brands__listing-item:nth-child(6) {
+		margin-right: 0;
+	}
+
+}
+
+.personel__title {
+	font-size: 1.125em;
+
+}
+.brand-title{
+	color: blue;
+}
+.brand-title,
+.brand_paragrap{
+ text-align: center;
+}
+.brand_paragrap{
+
+	
+}
+.brand__description{
+
+	margin-top: 1.5em;
+	width:100%;
+	margin-left: 2em;
+	border-top:1px solid;
+	border-bottom: 1px solid;
+}
+.brand__button {
+
+	color: black;
+	border: 2px solid black;
+	padding: .5em 1.5em;
+	display: inline-block;
+	margin-bottom:3em;
+}
+
+
+
+/*start of product styles*/
+
+.product__listing {
+
+}
+
+.products{
+	
+	margin-bottom: 1.6em;
+	text-align: center;
+	padding-top: 1.6em;
+	margin-right: 1em;
+
+	
+	
+
+}
+
+.product__image {
+	
+	height: 150px;
+	width: 150px;
+}
+
+
+
+
+
+@media only screen and (min-width: 40em) {
+
+	.products__listing-item {
+		float: left;
+		width: 49%;
+		margin-right:2%;
+
+	}
+
+	.products__listing-item:nth-child(even),
+	.products__listing-item:last-child {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: 64em) {
+	.products__listing-item {
+		width: 32%;
+	}
+
+	.products__listing-item:nth-child(even) {
+		margin-right: 2%;
+		
+	}
+
+	.products__listing-item:nth-child(3),
+	.products__listing-item:nth-child(6) {
+		margin-right: 0;
+	}
+
+}
+
+.product__title {
+	font-size: 1.125em;
+	margin-top: 5em;
+	color: blue;
+}
+.product__tittle,
+}
+/*product__paragrap{
+width:50;
+	
+}*/
+.products__description{
+
+	margin-top: 1.5em;
+	width:100%;
+	margin-left: 2em;
+	
+}
+.product__button {
+
+	color: black;
+	border: 2px solid black;
+	padding: .5em 1.5em;
+	display: inline-block;
+	margin-bottom:3em;
+}
+.product__name{
+	color: blue;
+
+
+}
+
+.product__name,
+.product__title,
+.product__paragrap{
+ text-align: center;
+}
+/* margin-top: 5em;*/
+/*}
+.ourproducts{
+	margin-top: 4em;
+}*/
+/*end of product style*/
+.product__paragrap{
+text-align: center
+}
+
+.product__title{
+
+	font-size: 200%;
+
+}
+.page-title{
+
+
+}
+
+.Ourproducts{
+background-color: #E6E6FA;
+
+}
+
+.products{
+
+text-align: center;	
+}
+
+
+/*.officers{
+	background-color: silver;
+}*/
+
+.form__container{
+	margin-right: 3em;
+	text-align: center;
+
+}
+
+
+.form__container input{
+
+	padding: 1em 5em;
+}
+/*end of products styles*/
+
+/*start of companey information styles*/
+
+.companey{
+	
+	background-color:#4169E1;
+	height: 500px;
+	padding: 0em 2em;
+
+}
+
+.column {
+	margin-bottom: 5em;
+}
+.companey p{
+	color:white;
+	width:100%;
+}
+.Companey__title{
+	color:white;
+	margin-top: 3em;
+}
+.Companey__paragraph{
+	margin-top: 2em;
+	width:10%;
+	font-size: 180%;
+}
+
+/*end of companey information*/
+/*end of customer Favourites styles*/
+.Customer__Favorites{
+margin-bottom: 10em;
+	
+}
+.Customer__paragraph{
+	margin-top: 2em;
+	width:10%;
+	font-size: 180%;
+}
+.customer__title{
+color:white;
+margin-top: 3em;
+
+}
+
+
+
+
+.customer__header{
+
+text-align: center;
+}
+
+.favourite{
+	border-top: 0.5px solid black;
+	border-bottom: 0.5px solid black; 
+}
+
+
+.Favourites{
+
+	width: 80%;
+	margin-left: 3em; 
+
+}
+.favourites__image{
+
+	margin-left: 10em;
+	margin-top: 5em;
+}
+.favourites__button{
+
+color: black;
+	border: 2px solid black;
+	padding: .3em 1.5em;
+	display: inline-block;
+	margin-bottom:3em;
+	margin-left: 11em;
+	margin-top: 1em;
+	font-weight: bold;
+}
+.Favourites__description p{
+font-size: 150%;
+
+}
+
+
+.Favourites__description{
+
+	margin-top: 2em;
+}
+.personel__foot-link{
+
+
+display: inline-block;
+	border: 1px solid #000;
+	border-radius: 100%;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	margin-right: 1em;
+}
+
+.icons__Title{
+
+	margin-right: 2em;
+}
+
+
+
+/*end of Favourites styles*/
+
+/* start of footer styles*/
+.footer{
+ 
+ background-color: silver;
+ height: 280px;
+}
+
+
+
+
+.column li{
+
+	list-style-type: none
+}
+
+.footer__image{
+
+	margin: 2em 6em;
+
+}
+
+li {
+display: inline;
+margin-right: 10px;}
+
+
+
+}
+.footer__nav{
+	margin-top: 1.5em;
+}
+.footer__footer{
+	margin-top: 1.5em;
+}
+
+
+
